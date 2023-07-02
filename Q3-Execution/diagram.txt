@@ -1,0 +1,23 @@
+Q3 - explain what is execution context in detail with diagram 
+
+==>Execution context is an abstract concept in JavaScript that defines the environment in which JavaScript code is executed. It includes the variables, functions, objects, and other data that a piece of code has access to during its execution. Understanding execution context is crucial for understanding how JavaScript code runs.
+
+==> To visualize execution context, we can represent it as a stack of execution contexts known as the "execution context stack" or "call stack." Each time a function is invoked, a new execution context is created and pushed onto the top of the stack. When a function finishes executing, its execution context is popped off the stack, and the control returns to the previous execution context.
+
+Here's a diagram illustrating the execution context stack:
+
++-------------------+
+| Execution Context |
+|   of Function D   |
++-------------------+
+| Execution Context |
+|   of Function C   |
++-------------------+
+| Execution Context |
+|   of Function B   |
++-------------------+
+| Global Execution  |
+|      Context      |
++-------------------+
+
+
