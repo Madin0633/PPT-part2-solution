@@ -1,0 +1,37 @@
+<!-- 5- Absolute: -->
+
+<!-- ==> Elements with an "absolute" position are positioned relative to their nearest positioned ancestor, or the containing block if no ancestor is positioned. An absolutely positioned element is taken out of the normal flow of the document, and other elements will ignore the space it occupies.Elements with an "absolute" position are positioned relative to their nearest positioned ancestor, or the containing block if no ancestor is positioned. An absolutely positioned element is taken out of the normal flow of the document, and other elements will ignore the space it occupies. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        /* if we give relative to main container the absolute can not postion outside the container */
+        .container {
+            position: relative;
+            height: 200px;
+            width: 300px;
+        }
+
+        .absolute-position {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="absolute-position">
+            <p>This element has an absolute position.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
